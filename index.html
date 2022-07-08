@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="corporate" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Popular Movies</title>
+        <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@2.18.0/dist/full.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="/styles/styles.css">
+        <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    </head>
+
+    <body>
+        <nav id="navbar" class="navbar">
+            <div class="navbar-start"></div>
+            <div class="navbar-center">
+                <a class="btn btn-ghost normal-case text-4xl" href="https://www.themoviedb.org/movie" target="_blank">Peliculas Populares</a>
+            </div>
+            <div class="navbar-end"></div>
+        </nav>
+        <div class="grid container w-11/12 max-w-5xl mt-10 mr-auto mb-28 ml-auto grid-cols-3 gap-10" id="container"></div>
+
+        <div class="btn-group flex content-center w-full justify-center flex-row place-content-center bg-base-content">
+            <button class="btn normal-case text-2xl col-start-1" id="btn-preview"><box-icon name='chevron-left' color='#ffffff'></box-icon> Anterior</button>
+            <button class="btn normal-case text-2xl col-end-7" id="btn-next">Siguiente <box-icon name='chevron-right' color="#ffffff"></box-icon></button>
+        </div>
+        
+        <a href="#footer" class="btn btn-circle swap fixed bottom-16 right-5 delay-300 delay-300">
+            <box-icon id="BtnDown" class="swap-off fill-current" name='chevron-down' color='#ffffff'></box-icon>
+        </a>
+
+        <a href="#navbar" class="btn btn-circle swap fixed bottom-16 left-5 delay-300 delay-300">
+            <box-icon id="BtnUp" class="swap-off fill-current" name='chevron-up' color='#ffffff'></box-icon>
+        </a>
+
+        <label class="btn btn-circle delay-300 swap swap-rotate hidden fixed bottom-16 right-5">
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" />
+
+            <!-- ChevronDown icon -->
+            
+            <!-- ChevronUp icon -->
+            <box-icon id="BtnUp" href="#navbar" class="swap-off fill-current" name='chevron-up' color='#ffffff'></box-icon>
+        </label>
+
+        <footer id="footer" class="footer items-center p-4 bg-neutral text-neutral-content">
+            <div class="items-center grid-flow-col">
+                <img src="./img/logo.svg" class="w-12" alt="Logo">
+                <p>Copyright © 2022 - All right reserved</p>
+                <p>YeiserDeveloper</p>
+            </div>
+            <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end select-none">
+                <a href="https://twitter.com/YeiserJimnez2"><box-icon name='twitter' type='logo' color='#ffffff'></box-icon></a>
+                <a href="https://github.com/YeiserDeveloper"><box-icon name='github' type='logo' color='#ffffff'></box-icon></a>
+                <a href="https://www.facebook.com/Yeisel27"><box-icon name='facebook-circle' type='logo' color='#ffffff'></box-icon></a>
+            </div>
+        </footer>
+        <script src="/app.js"></script>
+    </body>
+</html>
